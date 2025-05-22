@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play React Tetris Online - Classic Block Puzzle Game | game1234.online</title>
+    <meta name="description" content="Enjoy the classic Tetris game built with React. Play React Tetris online for free, challenge your skills and beat your high score!">
+    <link rel="canonical" href="https://game1234.online">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#007AFF',
+                            gray: '#8E8E93',
+                            lightgray: '#F2F2F7',
+                            darkgray: '#1C1C1E',
+                            green: '#34C759',
+                            red: '#FF3B30'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .btn {
+                @apply px-6 py-3 rounded-full font-bold transition-all duration-300 inline-block;
+            }
+            .btn-primary {
+                @apply bg-apple-blue text-white hover:bg-opacity-90;
+            }
+        }
+    </style>
+</head>
+<body class="bg-apple-lightgray dark:bg-apple-darkgray text-gray-800 dark:text-white min-h-screen">
+    <header class="bg-white dark:bg-gray-900 shadow-md">
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <h1 class="text-3xl md:text-4xl font-bold text-apple-blue">React Tetris</h1>
+                <p class="text-apple-gray mt-2">The classic block puzzle game reimagined with React</p>
+            </div>
+            <div>
+                <a href="#play" class="btn btn-primary">Play Now</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="play" class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-apple-blue border-b pb-2">Play React Tetris Online</h2>
+            <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-4 overflow-hidden">
+                <div class="aspect-w-16 aspect-h-9 w-full max-w-3xl mx-auto">
+                    <iframe 
+                        src="https://github.tanchangwen.com/react-tetris/?lan=en" 
+                        class="w-full h-[600px] md:h-[700px] border-0 rounded-md"
+                        title="React Tetris Game"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-apple-blue border-b pb-2">About React Tetris</h2>
+            <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6">
+                <p class="mb-4">React Tetris is a modern implementation of the classic Tetris game, built using React.js. This version maintains the addictive gameplay of the original while adding smooth animations and responsive controls.</p>
+                
+                <p class="mb-4">The game features the familiar mechanics of arranging falling blocks to create complete lines, which then disappear to make room for more blocks. As you progress, the speed increases, challenging your reflexes and strategic thinking.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                    <div class="bg-apple-lightgray dark:bg-gray-800 p-4 rounded-lg">
+                        <h3 class="font-bold text-xl mb-2 text-apple-blue">Game Features</h3>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Classic Tetris gameplay with React implementation</li>
+                            <li>Responsive design for both desktop and mobile</li>
+                            <li>Score tracking and level progression</li>
+                            <li>Smooth animations and controls</li>
+                            <li>Next block preview</li>
+                        </ul>
+                    </div>
+                    <div class="bg-apple-lightgray dark:bg-gray-800 p-4 rounded-lg">
+                        <h3 class="font-bold text-xl mb-2 text-apple-blue">How to Play</h3>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li><strong>Desktop:</strong> Use arrow keys to move and rotate blocks</li>
+                            <li><strong>Mobile:</strong> Use on-screen controls to play</li>
+                            <li>Left/Right: Move block horizontally</li>
+                            <li>Down: Accelerate block descent</li>
+                            <li>Up: Rotate block</li>
+                            <li>Space: Hard drop (instantly place block)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-apple-blue border-b pb-2">Why Play React Tetris?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6">
+                    <div class="text-apple-green text-4xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Brain Training</h3>
+                    <p>Tetris is known to improve cognitive skills, spatial awareness, and problem-solving abilities.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6">
+                    <div class="text-apple-blue text-4xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Quick Entertainment</h3>
+                    <p>Perfect for short breaks or longer gaming sessions, Tetris provides instant entertainment whenever you need it.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6">
+                    <div class="text-apple-red text-4xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Stress Relief</h3>
+                    <p>The rhythmic nature of Tetris has been shown to reduce stress and create a meditative state of flow.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white dark:bg-gray-900 shadow-inner mt-12 py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center text-apple-gray">
+                <p class="mb-4">&copy; 2023 game1234.online - React Tetris Online</p>
+                <p class="text-sm">React Tetris is a free online implementation of the classic Tetris game. Play anytime, anywhere, on any device.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple responsive adjustment for iframe on smaller screens -->
+    <script>
+        function adjustIframeHeight() {
+            const iframe = document.querySelector('iframe');
+            if (window.innerWidth < 768) {
+                iframe.style.height = '500px';
+            } else {
+                iframe.style.height = '700px';
+            }
+        }
+        
+        window.addEventListener('load', adjustIframeHeight);
+        window.addEventListener('resize', adjustIframeHeight);
+    </script>
+</body>
+</html>
